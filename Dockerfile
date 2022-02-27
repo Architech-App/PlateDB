@@ -8,7 +8,7 @@ ENV HASURA_GRAPHQL_DEV_MODE=true
 
 # Heroku hobby tier PG has few limitations including 20 max connections
 # https://devcenter.heroku.com/articles/heroku-postgres-plans#hobby-tier
-ENV HASURA_GRAPHQL_PG_CONNECTIONS=15
+ENV HASURA_GRAPHQL_PG_CONNECTIONS=18
 
 CMD HASURA_GRAPHQL_METADATA_DATABASE_URL=$DATABASE_URL graphql-engine \
     serve \
